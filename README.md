@@ -12,14 +12,15 @@ The data templates serve to be the starting point for scientists to customise th
 
 Pull requests are welcome.
 
+
 ## Repo structure
 
 The repository structure is described below.
 
 ```
 .
-├── README.md			: Description of this repository
-├── LICENSE				: Repository license
+├── README.md				: Description of this repository
+├── LICENSE 				: Repository license
 ├── slides				: Slides that explains the usage of templates
 │   └── 2020-11-04_field-work-templates.pdf
 └── templates
@@ -32,6 +33,7 @@ The repository structure is described below.
 ```
 
 ## Additional resources
+
 * [Excel template generator](https://sios-svalbard.org/cgi-bin/darwinsheet/index.cgi?setup=darwin)
 * [Darwin Core standard terms with definitions and examples](https://dwc.tdwg.org/terms/)
 
@@ -39,6 +41,7 @@ The repository structure is described below.
 ## Contributors
 
 [List of contributors](https://github.com/data-biodiversity-aq/data-mgt-templates/graphs/contributors)
+
 
 ## Acknowledgement
 
