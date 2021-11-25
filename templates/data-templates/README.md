@@ -53,14 +53,14 @@ Use sampling event template if there is no taxon involved, use occurrence templa
 | timeZone | The time zone of recorded time or interval during which an Event   occurred. |   | UTC |
 | samplingProtocol | The name of, reference to, or description of the method or   protocol used during an Event. |   | https://doi.org/10.1111/j.1466-8238.2009.00467.x |
 |  occurrenceStatus | A statement about the presence or absence of a Taxon at a   Location. | Mandatory field for OBIS.  | Present |
-| individualcount | The number of individuals represented present at the time of the   Occurrence. |   | 25 |
+| individualCount | The number of individuals represented present at the time of the   Occurrence. |   | 25 |
 | organismQuantity | A number or enumeration value for the quantity of organisms. | A dwc:organismQuantity must have a corresponding   dwc:organismQuantityType. | 27 (organismQuantity) with individuals (organismQuantityType) |
 | organismQuantityType | The type of quantification system used for the quantity of   organisms. | A dwc:organismQuantityType must have a corresponding   dwc:organismQuantity. | 12.5 (organismQuantity) with %biomass (organismQuantityType). |
 | sex | The sex of the biological individual(s) represented in the   Occurrence. |   | female, male, hermaphrodite |
 | lifeStage | The age class or life stage of the biological individual(s) at   the time the Occurrence was recorded. |   | egg, eft, juvenile, adult |
 | behavior | The behavior shown by the subject at the time the Occurrence was   recorded. |   | roosting, foraging, running |
 | occurrenceRemarks | Comments or notes about the Occurrence. |   | found dead on road |
-| identifiedBy | A list (concatenated and separated) of names of people, groups,   or organizations who assigned the Taxon to the subject. | Recommended best practice is to separate the values in a list   with space vertical bar space ( \| ). |   |
+| identifiedByID | A list (concatenated and separated) of ORCID of people, groups,   or organizations who assigned the Taxon to the subject. | Recommended best practice is to separate the values in a list   with space vertical bar space ( \| ). |   |
 | dateIdentified | The date on which the subject was determined as representing the   Taxon. | Recommended best practice is to use a date that conforms to ISO   8601-1:2019. | 2007-11-13 (YYYY-MM-DD) |
 | scientificName | The scientific name, without authorship and date information if   known. When forming part of an Identification, this should be the name in   lowest level taxonomic rank that can be determined. This term should not   contain identification qualifications, which should instead be supplied in   the IdentificationQualifier term. | Mandatory field for OBIS.  | Ctenomys sociabilis |
 | scientificNameAuthorship | The authorship information for the scientificName formatted   according to the conventions of the applicable nomenclaturalCode. |   | (Györfi, 1952) |
