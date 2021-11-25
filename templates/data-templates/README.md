@@ -11,6 +11,11 @@ Use sampling event template if there is no taxon involved, use occurrence templa
 | eventID | An identifier for the set of information associated with an Event   (something that occurs at a place and time). May be a global unique   identifier or an identifier specific to the data set. |   | INBO:VIS:Ev:00009375 |
 | parentEventID | An identifier for the broader Event that groups this and   potentially other Events. |   | A1 (parentEventID to identify the main Whittaker Plot in nested   samples, each with its own eventID - A1:1, A1:2). |
 | eventDate | The date-time or interval during which an Event occurred. For   occurrences, this is the date-time when the event was recorded. Not suitable   for a time in a geological context. | Mandatory field for OBIS. Recommended best practice is to use a   date that conforms to ISO 8601-1:2019. | 2020-10-31 |
+| year | The four-digit year in which the Event occurred, according to the   Common Era Calendar. |   | 2008 |
+| month | The integer month in which the Event occurred. |   | 10 |
+| day | The integer day of the month on which the Event occurred. |   | 28 |
+| eventTime | The time or interval during which an Event occurred. | Recommended best practice is to use a date that conforms to ISO   8601-1:2019. | 08:30:00 |
+| timeZone | The time zone of recorded time or interval during which an Event   occurred. |   | UTC |
 | samplingProtocol | The name of, reference to, or description of the method or   protocol used during an Event. |   |   |
 | samplingEffort | The amount of effort expended during an Event. |   | 40 trap-nights, 10 observer-hours, 10 km by foot, 30 km by car |
 | sampleSizeValue | A numeric value for a measurement of the size (time duration,   length, area, or volume) of a sample in a sampling event. | A sampleSizeValue must have a corresponding sampleSizeUnit.  | 5 for sampleSizeValue with metre for sampleSizeUnit. |
@@ -19,8 +24,6 @@ Use sampling event template if there is no taxon involved, use occurrence templa
 | decimalLatitude | The geographic latitude (in decimal degrees, using the spatial   reference system given in geodeticDatum) of the geographic center of a   Location. Positive values are north of the Equator, negative values are south   of it. Legal values lie between -90 and 90, inclusive. | Mandatory field for OBIS.  | -41.09834 |
 | decimalLongitude | 	The geographic longitude (in decimal degrees, using the spatial   reference system given in geodeticDatum) of the geographic center of a   Location. Positive values are east of the Greenwich Meridian, negative values   are west of it. Legal values lie between -180 and 180, inclusive. | Mandatory field for OBIS.  | -121.17611 |
 | geodeticDatum | The ellipsoid, geodetic datum, or spatial reference system (SRS)   upon which the geographic coordinates given in decimalLatitude and   decimalLongitude as based. |   | EPSG:4326 |
-| time | The time or interval during which an Event occurred. | Recommended best practice is to use a date that conforms to ISO   8601-1:2019. | 08:30:00 |
-| timeZone | The time zone of recorded time or interval during which an Event   occurred. |   | UTC |
 | countryCode | The standard code for the country in which the Location occurs. | Recommended best practice is to use an ISO 3166-1-alpha-2 country code. https://en.wikipedia.org/wiki/ISO_3166-1 | AQ |
 | footprintWKT | A Well-Known Text (WKT) representation of the shape (footprint,   geometry) that defines the Location. A Location may have both a point-radius   representation (see decimalLatitude) and a footprint representation, and they   may differ from each other. |   | POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20)) (the one-degree   bounding box with opposite corners at longitude=10, latitude=20 and   longitude=11, latitude=21) |
 | footprintSRS | 	A Well-Known Text (WKT) representation of the Spatial Reference   System (SRS) for the footprintWKT of the Location. Do not use this term to   describe the SRS of the decimalLatitude and decimalLongitude, even if it is   the same as for the footprintWKT - use the geodeticDatum instead. |   | GEOGCS["`GCS_WGS_1984`", DATUM["`D_WGS_1984`",   SPHEROID["WGS_1984",6378137,298.257223563]],   PRIMEM["Greenwich",0], UNIT["Degree",0.0174532925199433]]   (WKT for the standard WGS84 Spatial Reference System EPSG:4326). |
@@ -46,7 +49,7 @@ Use sampling event template if there is no taxon involved, use occurrence templa
 | year | The four-digit year in which the Event occurred, according to the   Common Era Calendar. |   | 2008 |
 | month | The integer month in which the Event occurred. |   | 10 |
 | day | The integer day of the month on which the Event occurred. |   | 28 |
-| time | The time or interval during which an Event occurred. | Recommended best practice is to use a date that conforms to ISO   8601-1:2019. | 08:30:00 |
+| eventTime | The time or interval during which an Event occurred. | Recommended best practice is to use a date that conforms to ISO   8601-1:2019. | 08:30:00 |
 | timeZone | The time zone of recorded time or interval during which an Event   occurred. |   | UTC |
 | samplingProtocol | The name of, reference to, or description of the method or   protocol used during an Event. |   | https://doi.org/10.1111/j.1466-8238.2009.00467.x |
 |  occurrenceStatus | A statement about the presence or absence of a Taxon at a   Location. | Mandatory field for OBIS.  | Present |
